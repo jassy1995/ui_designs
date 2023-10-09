@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { routes } from "../helpers/routes";
 import { LuSunMoon } from "react-icons/lu";
 import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, A11y, Mousewheel } from 'swiper/modules';
 import { groupProject } from "../lib/util";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
 import 'swiper/css/mousewheel';
 // import '../styles/home.css';
 
 export default function Home() {
-    // const swiper = useSwiper();
 
     const breakpoints = {
         320: {
@@ -38,7 +35,7 @@ export default function Home() {
     const [projects, setProject] = useState(() => {
         return routes.filter(route => route.category === 'landing-page');
     })
-    const [categories, setCategory] = useState(() => {
+    const [categories] = useState(() => {
         console.log(groupProject(routes));
         return groupProject(routes);
     })
@@ -76,7 +73,7 @@ export default function Home() {
                 {
                     categories?.map((item, i) => (
                         <SwiperSlide key={i}>
-                            <div onClick={() => changeItem(item.category)} className='cursor-pointer border dark:border-0 border-slate-100 bg-white dark:bg-slate-900 text-black dark:text-white shadow-md flex justify-center items-center rounded-md py-1 font-semibold uppercase'>
+                            <div onClick={() => changeItem(item.category)} className='cursor-pointer border dark:border-0 border-slate-100 bg-white dark:bg-slate-900 text-black dark:text-white shadow-md flex justify-center items-center rounded-md py-2 font-semibold uppercase'>
                                 {item.category?.replace('-', ' ')} ({item.quantity})
                             </div>
                         </SwiperSlide>
@@ -88,7 +85,6 @@ export default function Home() {
                     projects?.map((route, i) => (
                         <Link key={i} to={route.path}>
                             <div className='flex flex-col justify-cente items-cente shadow-md border-t dark:border-t-0 border-slate-100 rounded-md grow bg-white dark:bg-slate-900'>
-                                {/* <h3 className='text-[36px] flex justify-center items-center font-semibold text-blue-500'>{route.quantity}</h3> */}
                                 <img src={route.src} alt="not exist" className='object-cover w-full h-[250px]' />
                                 <div className='p-4'>
                                     <div className='text-[16px] font-bold uppercase text-black dark:text-white'>{route?.name}</div>
