@@ -72,7 +72,7 @@ export default function HomeManagement() {
                     <div className='text-slate-500 max-w-sm'>Smart Control is helping the user to achieve the best and comfortable atmosphere for their home</div>
                     <div className='px-6 py-3 shadow-lg rounded-md bg-white w-full md:w-2/3 flex justify-between items-center mt-10'>
                         <input type="text" placeholder='Enter your email' className='outline-none text-slate-700' />
-                        <button className='capitalize bg-[rgb(124,57,254)] rounded-lg px-4 py-2 text-white hover:bg-violet-800'>try now</button>
+                        <button className='capitalize bg-[rgb(124,57,254)] rounded-lg px-4 py-2 text-white hover:bg-violet-700'>try now</button>
                     </div>
                 </div>
             </div>
