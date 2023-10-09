@@ -50,10 +50,10 @@ export default function HomeManagement() {
     return (
         <div className='flex sm:space-x-6 space-x-0'>
             <div className='w-full md:w-[60%] bg-[rgba(250,251,253)] rounded-lg pb-[10px] h-screen md:pb-[210px] relative'>
-                <span className='absolute top-[120px] right-[90px] md:top-[100px] md:right-[200px]'>
+                <span className='absolute top-[130px] right-[90px] md:top-[120px] md:right-[200px]'>
                     <FaDotCircle className='text-[rgb(124,57,254)]' />
                 </span>
-                <span className='absolute top-[160px] right-[150px] md:top-[210px] md:right-[550px]'>
+                <span className='absolute top-[170px] right-[150px] md:top-[240px] md:right-[550px]'>
                     <RxDotFilled className='text-[rgb(124,57,254)]' />
                 </span>
                 <span className='hidden md:block absolute top-[590px] right-[30px] md:top-[420px] md:right-[100px]'>
@@ -66,20 +66,20 @@ export default function HomeManagement() {
                     <FaDotCircle className='text-[rgb(124,57,254)]' />
                 </span>
                 <HeaderNav />
-                <div className='flex flex-col space-y-6 mt-[60px] sm:mt-[120px] px-3 sm:px-16'>
+                <div className='flex flex-col space-y-6 mt-[50px] sm:mt-[110px] px-3 sm:px-16'>
                     <div className='capitalize text-[rgb(243,163,75)] font-semibold'>smart home app</div>
-                    <div className='text-7xl text-[rgb(25,17,85)] font-semibold'>Created to make life much Easier</div>
+                    <div className='text-7xl text-[rgb(25,17,85)] font-semibold'>Created to make life much easier</div>
                     <div className='text-slate-500 max-w-sm'>Smart Control is helping the user to achieve the best and comfortable atmosphere for their home</div>
                     <div className='px-6 py-3 shadow-lg rounded-md bg-white w-full md:w-2/3 flex justify-between items-center mt-10'>
-                        <input type="text" placeholder='enter your email' className='outline-none text-slate-700' />
-                        <button className='capitalize bg-[rgb(124,57,254)] rounded-lg px-2 py-2 text-white'>try now</button>
+                        <input type="text" placeholder='Enter your email' className='outline-none text-slate-700' />
+                        <button className='capitalize bg-[rgb(124,57,254)] rounded-lg px-4 py-2 text-white hover:bg-violet-800'>try now</button>
                     </div>
                 </div>
             </div>
             <div className='w-full  md:w-[40%] bg-[rgb(25,17,85)] px-9 py-8 hidden md:flex flex-col space-y-10'>
                 <div className='flex justify-end items-center space-x-3'>
-                    <button className='capitalize rounded-lg px-3 py-2 text-white font-normal'>login</button>
-                    <button className='capitalize bg-[rgb(59,54,107)] rounded-lg px-3 py-2 text-white font-normal'>sign up</button>
+                    <button className='capitalize rounded-lg px-4 py-[6.8px] text-white font-normal hover:bg-[rgb(59,54,107)] border border-[rgb(59,54,107)]'>login</button>
+                    <button className='capitalize bg-[rgb(59,54,107)] rounded-lg px-4 py-2 text-white font-normal'>sign up</button>
                 </div>
                 <div className='flex flex-col space-y-10 overflow-hidden'>
                     <div>
@@ -87,7 +87,7 @@ export default function HomeManagement() {
                             {
                                 slider_items?.map((item, i) => (
                                     <swiper-slide key={i}>
-                                        <img src={item} className='h-[570px] w-full object-cover' />
+                                        <img src={item} className='h-[570px] w-full object-cover rounded-lg' />
                                     </swiper-slide>
                                 ))
                             }

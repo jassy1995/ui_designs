@@ -13,12 +13,13 @@ export default function HeaderNav() {
     }
     return (
         <nav className='flex justify-between items-center w-full py-6 bg-white px-3 sm:px-16'>
-            <h1 className='font-semibold capitalize'>
+            <h1 className='font-semibold capitalize flex items-center'>
+                <img src="../../smart-motion-logo.png" className='w-5 h-5 object-cover mr-1' alt="" />
                 <span className='capitalize text-black'>Smart</span>
                 <span className='text-[rgb(124,57,254)] capitalize'>Control</span>
             </h1>
             <div className='list-none md:flex hidden justify-end items-center flex-1'>
-                <ul className='flex items-center space-x-2 xs:space-x-6 capitalize'>
+                <ul className='flex items-center space-x-2 xs:space-x-6 capitalize py-3'>
                     <li>home</li>
                     <li>feature</li>
                     <li>blog</li>
