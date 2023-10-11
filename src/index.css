@@ -27,7 +27,8 @@ body {
   margin: 0;
   /* font-family: "Roboto", sans-serif; */
   line-height: 1.5;
-  font-size: 1.04rem;
+  /* font-size: 1.04rem; */
+  font-size: 16px;
   font-weight: 400;
   background-color: white;
   /* background-color: rgb(136, 127, 127) !important; */
@@ -160,4 +161,21 @@ form-control {
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;
+  filter: blur(70px) !important;
+}
+.blue__gradient_1 {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;
+  filter: blur(100px) !important;
+}
+.blue__gradient_2 {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;
+  filter: blur(50px) !important;
+}
+.blue__gradient_3 {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;
+  filter: blur(110px) !important;
 }
