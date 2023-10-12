@@ -53,7 +53,7 @@ function HeaderNavigation() {
                         <BiChevronDown />
                     </div>
                 </div>
-                <button className="border border-slate-300 px-6 py-2 rounded-xl">Contact us</button>
+                <button className="py-3 px-3 xs:px-8 capitalize font-medium  text-white border border-slate-400 hover:border-[rgb(25,27,32)] hover:bg-[rgb(82,201,231)] rounded-xl outline-none">Contact us</button>
             </div>
 
             <div className='md:hidden flex justify-end items-center flex-1'>
@@ -81,21 +81,21 @@ function ServiceCard() {
                     <AiOutlineAntDesign className='text-[rgb(82,201,231)] text-3xl' />
                 </div>
                 <h1 className='text-2xl text-white uppercase mt-4'>ui/ux design</h1>
-                <p className='text-[rgb(171,180,190)] mt-6 font-normal text-[18px] leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
+                <p className='text-[rgb(171,180,190)] mt-6 font-normal leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
             </div>
             <div className='bg-[rgb(20,22,28)] rounded-md p-12 flex flex-col justify-center items-center'>
                 <div className='rounded-full bg-[rgb(41,35,51)] inline-flex items-center justify-center w-16 h-16'>
                     <GoStack className='text-[rgb(169,114,197)] text-3xl' />
                 </div>
                 <h1 className='text-2xl text-white uppercase mt-4'>graphic design</h1>
-                <p className='text-[rgb(171,180,190)]  mt-6 font-normal text-[18px] leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
+                <p className='text-[rgb(171,180,190)]  mt-6 font-normal leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
             </div>
             <div className='bg-[rgb(20,22,28)] rounded-md p-12 flex flex-col justify-center items-center'>
                 <div className='rounded-full bg-[rgb(28,42,49)] inline-flex items-center justify-center w-16 h-16'>
                     <MdDeveloperMode className='text-[rgb(82,201,231)] text-3xl' />
                 </div>
                 <h1 className='text-2xl text-white uppercase mt-4'>development</h1>
-                <p className='text-[rgb(171,180,190)] mt-6 font-normal text-[18px] leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
+                <p className='text-[rgb(171,180,190)] mt-6 font-normal leading-[30.8px]'>Make a good impression when you communicate your identity and the service or products you sell to your audience.</p>
             </div>
         </div>
 
@@ -127,12 +127,12 @@ export default function HeroSection() {
             <div className='flex space-x-3 mt-20 md:mt-32'>
                 <div className='flex flex-col  md:w-1/2'>
                     <div className='flex flex-col'>
-                        <h4 className='uppercase z-10 text-slate-300 font-normal' style={{ letterSpacing: "2px" }}>a trusted digital agency 😍</h4>
-                        <h1 className='text-7xl font-bold z-10'>we make your business look amazing</h1>
+                        <h4 className='uppercase z-10 text-slate-300 font-normal' style={{ letterSpacing: "3px" }}>a trusted digital agency 😍</h4>
+                        <h1 className='text-4xl xs:text-6xl font-bold z-10'>we make your business look amazing</h1>
                     </div>
-                    <p className='max-w-[500px] mt-6 z-10 text-slate-300 font-normal text-[18px] leading-[30.8px]'>Enver studio is a didgital studio that offers several services such as UI/UX Design to developers, we will provide the best services for those of you who use our service</p>
+                    <p className='max-w-[500px] mt-6 z-10 text-slate-300 font-normal  leading-[30.8px]'>Enver studio is a didgital studio that offers several services such as UI/UX Design to developers, we will provide the best services for those of you who use our service</p>
                     <div className='flex items-center space-x-5 mt-9 z-10'>
-                        <button className='py-3 px-3 xs:px-8 capitalize font-medium text-14 xs:text-[18px] text-white bg-[rgb(82,201,231)] rounded-xl outline-none'>get started</button>
+                        <button className='py-3 px-3 xs:px-8 capitalize font-medium text-white bg-[rgb(82,201,231)] rounded-xl outline-none hover:bg-[rgb(83,172,194)]'>get started</button>
                         <div className='flex items-center space-x-2'>
                             <span className='bg-[rgb(22,68,85)]'></span>
                             <span className='text-slate-300 font-normal'>See our project</span>
@@ -141,15 +141,15 @@ export default function HeroSection() {
                     </div>
                     <div className='flex items-center space-x-10 mt-9'>
                         <div className='flex flex-col items-center space-y-3'>
-                            <span className='text-white text-3xl font-bold'>100+</span>
+                            <span className='text-white font-bold'>100+</span>
                             <span className='text-slate-300 uppercase'>client</span>
                         </div>
                         <div className='flex flex-col items-center space-y-3'>
-                            <span className='text-white text-3xl font-bold'>30</span>
+                            <span className='text-white font-bold'>30</span>
                             <span className='text-slate-300 uppercase'>startup</span>
                         </div>
                         <div className='flex flex-col items-center space-y-3'>
-                            <span className='text-white text-3xl font-bold'>40</span>
+                            <span className='text-white font-bold'>40</span>
                             <span className='text-slate-300 uppercase'>product</span>
                         </div>
 
@@ -160,7 +160,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className='mt-20 md:mt-32'>
-                <h1 className='text-5xl font-bold z-10 mb-12 text-center xs:text-start'>Our services</h1>
+                <h1 className='text-4xl xs:text-6xl font-bold z-10 mb-12 text-center xs:text-start'>Our services</h1>
                 <ServiceCard />
             </div>
 

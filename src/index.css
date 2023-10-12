@@ -28,8 +28,8 @@ body {
   /* font-family: "Roboto", sans-serif; */
   line-height: 1.5;
   /* font-size: 1.04rem; */
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 16px !important;
+  font-weight: 400 !important;
   background-color: white;
   /* background-color: rgb(136, 127, 127) !important; */
   opacity: 1;
@@ -173,7 +173,7 @@ form-control {
 }
 .blue__gradient_2 {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;
-  filter: blur(50px) !important;
+  filter: blur(80px) !important;
 }
 .blue__gradient_3 {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0ec6e6 100%) !important;

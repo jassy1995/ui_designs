@@ -13,7 +13,7 @@ const NavBar = () => {
                 {
                     navLinks.map((el, index) => {
                         return (
-                            <li key={el.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
+                            <li key={el.id} className={`font-poppins font-normal cursor-pointer ${styles.paragraph} ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
                                 <a href={`#${el.id}`}>
                                     {el.title}
                                 </a>
@@ -29,7 +29,7 @@ const NavBar = () => {
                         {
                             navLinks.map((el, index) => {
                                 return (
-                                    <li key={el.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} text-white`}>
+                                    <li key={el.id} className={`font-poppins font-normal cursor-pointer ${styles.paragraph} ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} text-white`}>
                                         <a href={`#${el.id}`}>
                                             {el.title}
                                         </a>
@@ -62,9 +62,9 @@ const GetStarted = () => (
 
 const Hero = () => {
     return (
-        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-            <div className={`flex-1 flex justify-start items-start flex-col xl:px-0 sm:px-16 px-6`}>
-                <div className='flex flex-row items-center py-[16px] px-4 bg-discount-gradient rounded-[10px] mb-2'>
+        <section id="home" className={`flex md:flex-row flex-col sm:pb-12 pb-4`}>
+            <div className={`flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6`}>
+                <div className='flex flex-row items-center py-[16px] px-4 bg-discount-gradient rounded-[10px] mt-5 xs:mt-0'>
                     <img src={discount} alt="discont" className="w-[32px] h-[32px]" />
                     <p className={`${styles.paragraph} ml-2 uppercase`}>
                         <span className="text-white">20%</span> Discount For {" "}
@@ -72,8 +72,8 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-row justify-between items-center w-full">
-                    <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
+                <div className="flex flex-row justify-between items-center w-full mt-6">
+                    <h1 className="flex-1 font-poppins font-semibold xs:text-6xl text-4xl text-white ss:leading-[1.1] leading-[40px]">
                         The Next  <br className="sm:block hidden" /> {" "}
                         <span className="text-gradient">Generation</span> {" "}
                     </h1>
@@ -82,8 +82,8 @@ const Hero = () => {
                         <GetStarted />
                     </div>
                 </div>
-                <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full"> Payment Method.</h1>
-                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                <h1 className="font-poppins font-semibold xs:text-6xl text-4xl text-white ss:leading-[1.1] leading-[40px] w-full"> Payment Method.</h1>
+                <p className={`${styles.paragraph} max-w-[470px] my-6`}>
                     Our team of experts uses a methodology
                     to identify the credity cards most likely
                     to fit your needs.
@@ -92,7 +92,7 @@ const Hero = () => {
             </div>
 
 
-            <div className={`flex-1 flex ${styles.flexCenter} md:mr-0  my-10 relative`}>
+            <div className={`flex-1 flex ${styles.flexCenter} md:mr-0 relative`}>
                 <img src={robot} className="w-[100%] h-[100%] relative z-[5]" alt="" srcSet="" />
                 <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
                 <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />
@@ -132,11 +132,11 @@ const FeatureCard = ({ icon, title, content, index }) => (
         <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
             <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
         </div>
-        <div className="flex-1 flex flex-col ml-3">
-            <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+        <div className={`flex-1 flex flex-col ml-3`}>
+            <h4 className={`font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1 ${styles.paragraph}`}>
                 {title}
             </h4>
-            <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+            <p className={`font-poppins font-normal text-dimWhite text-[16px] leading-[24px] ${styles.paragraph}`}>
                 {content}
             </p>
         </div>
@@ -320,14 +320,14 @@ const Footer = () => (
             <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
                 {footerLinks.map((footerlink) => (
                     <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
-                        <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+                        <h4 className={`font-poppins font-medium text-[18px] leading-[27px] text-white ${styles.paragraph}`}>
                             {footerlink.title}
                         </h4>
                         <ul className="list-none mt-4">
                             {footerlink.links.map((link, index) => (
                                 <li
                                     key={link.name}
-                                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
+                                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${styles.paragraph} ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                                         }`}
                                 >
                                     {link.name}
