@@ -5,6 +5,7 @@ import Notfound from "./views/Notfound";
 import HomeManagement from "./views/HomeManagement";
 import Home from "./views/Home";
 import HeroSection from "./views/HeroSection";
+import HooBank from "./views/HooBank";
 
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/smart-home" element={<HomeManagement />} />
             <Route path="/hero-section" element={<HeroSection />} />
+            <Route path="/hoo-bank" element={<HooBank />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </div>
