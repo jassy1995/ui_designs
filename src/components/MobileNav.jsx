@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { GrClose } from 'react-icons/gr'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { FiSearch } from "react-icons/fi";
+import { smartHomeLogo } from '../assets';
 
 
 
@@ -14,7 +15,7 @@ export default function HeaderNav() {
     return (
         <nav className='flex justify-between items-center w-full py-6 bg-white px-3 sm:px-16'>
             <h1 className='font-semibold capitalize flex items-center'>
-                <img src="../../smart-motion-logo.png" className='w-5 h-5 object-cover mr-1' alt="" />
+                <img src={smartHomeLogo} className='w-5 h-5 object-cover mr-1' alt="" />
                 <span className='capitalize text-black'>Smart</span>
                 <span className='text-[rgb(124,57,254)] capitalize'>Control</span>
             </h1>

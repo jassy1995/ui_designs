@@ -7,7 +7,7 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 import { GoStack } from "react-icons/go";
 import { RiCloseFill } from 'react-icons/ri';
 import { AiOutlineMenu } from 'react-icons/ai'
-
+import { designShape1, designShape2, enverHeroBanner, enverLogo, unitedStatesFlag } from '../assets';
 
 function HeaderNavigation() {
     const [active, setActive] = useState('home');
@@ -19,7 +19,7 @@ function HeaderNavigation() {
         <nav className="flex justify-between items-center">
             <div className="flex items-center space-x-20">
                 <div className="flex items-center space-x-2">
-                    <img src="../../logo.png" className="object-cover w-8" alt="" />
+                    <img src={enverLogo} className="object-cover w-8" alt="" />
                     <span className='font-bold text-2xl'>Enver</span>
                 </div>
                 <ul className="hidden md:flex justify-between items-center space-x-6 lg:space-x-10 text-[rgb(158,158,167)] capitalize">
@@ -47,7 +47,7 @@ function HeaderNavigation() {
             </div>
             <div className="hidden md:flex justify-between items-center space-x-10">
                 <div className="flex items-center space-x-2">
-                    <img src="../../United_States_flag.svg" className="object-cover w-5 h-5 rounded-full" alt="" />
+                    <img src={unitedStatesFlag} className="object-cover w-5 h-5 rounded-full" alt="" />
                     <div className="flex items-center">
                         <span>ENG</span>
                         <BiChevronDown />
@@ -110,13 +110,13 @@ export default function HeroSection() {
             <div className="hidden md:block absolute z-0 w-[6%] h-[20%] right-[200px] top-[200px] blue__gradient_2" />
             <div className="hidden sm:block absolute z-0 w-[6%] h-[20%] left-[450px] top-[700px] blue__gradient_3" />
             <div className='hidden md:block absolute top-[180px] right-[550px]'>
-                <img src='../../Group 2_5.png' className='object-cover w-4 h-4' />
+                <img src={designShape1} className='object-cover w-4 h-4' />
             </div>
             <div className='hidden md:block absolute top-[220px] right-[650px]'>
-                <img src='../../Group 2_5.png' className='object-cover w-7 h-7' />
+                <img src={designShape1} className='object-cover w-7 h-7' />
             </div>
             <div className='hidden md:block absolute top-[600px] right-[650px]'>
-                <img src='../../public/Vector 10 (2).png' className='object-cover w-20' />
+                <img src={designShape2} className='object-cover w-20' />
             </div>
             <div className='hidden md:block absolute top-[220px] right-[210px]'>
                 <BsCircle className='text-slate-400 w-7 h-7' />
@@ -156,7 +156,7 @@ export default function HeroSection() {
                     </div>
                 </div>
                 <div className='hidden md:flex items-center justify-center w-1/2'>
-                    <img src="../../Asset 20.png" className='object-cover w-[440px] z-10' alt="" />
+                    <img src={enverHeroBanner} className='object-cover w-[440px] z-10' alt="" />
                 </div>
             </div>
             <div className='mt-20 md:mt-32'>
