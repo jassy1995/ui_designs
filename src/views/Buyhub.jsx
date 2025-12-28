@@ -378,7 +378,7 @@ const Footer = () => {
                     <li>How we work</li>
                     <li>Contact Us</li>
                     <li>Terms and Conditions</li>
-                    <li><Link to="/buyhub/privacy-policy" className='cursor-pointer hover:text-blue-500'>Privacy Policy</Link></li>
+                    <li><Link to="/privacy-policy" target="_blank" className='cursor-pointer hover:text-blue-500'>Privacy Policy</Link></li>
                 </ul>
             </div>
             <div className='flex flex-col mt-10 md:mt-0'>

@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <div className="mt-10">
-          <Link to="/buyhub" className="text-blue-600">Back to Buyhub</Link>
+          <Link to="/" className="text-blue-600">Back to Home</Link>
         </div>
       </div>
     </div>

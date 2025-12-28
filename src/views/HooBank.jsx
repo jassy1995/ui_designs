@@ -3,6 +3,7 @@ import styles, { layout } from "../styles/style";
 import { close, logo, menu, discount, robot, arrowUp, apple, bill, google, card, quotes } from '../assets';
 import { navLinks, stats, features, feedback, clients, footerLinks, socialMedia } from '../constants';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false)
@@ -322,13 +323,17 @@ const Footer = () => (
                         </h4>
                         <ul className="list-none mt-4">
                             {footerlink.links.map((link, index) => (
-                                <li
-                                    key={link.name}
-                                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${styles.paragraph} ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                                        }`}
-                                >
-                                    {link.name}
-                                </li>
+                              
+                                    <li
+                                        key={link.name}
+                                        className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${styles.paragraph} ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
+                                            }`}
+                                    >
+                                        {
+                                        link.name === "Privacy Policy" ? <Link to={link.link} target="_blank" className='cursor-pointer hover:text-blue-500'>{link.name}</Link> : link.name
+                                        }
+                                    </li>
+                               
                             ))}
                         </ul>
                     </div>

@@ -24,7 +24,7 @@ function App() {
             <Route path="/hero-section" element={<HeroSection />} />
             <Route path="/hoo-bank" element={<HooBank />} />
             <Route path="/buyhub" element={<Buyhub />} />
-            <Route path="/buyhub/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </div>
