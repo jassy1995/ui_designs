@@ -375,19 +375,18 @@ const Footer = () => {
             <div className='flex flex-col mt-10 md:mt-0'>
                 <h3 className='font-bold text-[17.6px] leading-[21.12px]'>Quick links</h3>
                 <ul className='flex flex-col space-y-4 mt-7 text-slate-800'>
-                    <li>How we work</li>
                     <li>Contact Us</li>
                     <li>Terms and Conditions</li>
-                    <li><Link to="/privacy-policy" target="_blank" className='cursor-pointer hover:text-blue-500'>Privacy Policy</Link></li>
+                    <li><Link to="/privacy-policy" className='cursor-pointer hover:text-blue-500'>Privacy Policy</Link></li>
                 </ul>
             </div>
             <div className='flex flex-col mt-10 md:mt-0'>
                 <h3 className='font-bold text-[17.6px] leading-[21.12px]'>Contact Us</h3>
                 <ul className='flex flex-col space-y-4 mt-7 text-slate-800'>
-                    <li className='flex items-center space-x-3'><MdCall /> <span>Shop now pay later</span></li>
-                    <li className='flex items-center space-x-3'><FaEnvelope /> <span>Shop now pay later</span></li>
-                    <li className='flex items-center space-x-3'><FaLocationDot /> <span>Shop now pay later</span></li>
-                    <li className='flex items-center space-x-5 md:justify-between text-white'>
+                    <li className='flex items-center space-x-3'><MdCall /> <span>+234 814 327 4300</span></li>
+                    <li className='flex items-center space-x-3'><FaEnvelope /> <span>info@buyhub.com</span></li>
+                    <li className='flex items-center space-x-3'><FaLocationDot /> <span>No.4 Kate Gada St Ekoro Abule-egba Lagos.</span></li>
+                    <li className='flex items-center space-x-5 text-white'>
                         <span className='w-8 h-8 rounded-full bg-[rgb(112,131,186)]  inline-flex justify-center items-center'><BiLogoFacebook /></span>
                         <span className='w-8 h-8 rounded-full  bg-gradient-to-r from-red-500 to-purple-500 inline-flex justify-center items-center'><IoLogoInstagram /></span>
                         <span className='w-8 h-8 rounded-full bg-[rgb(91,153,199)] inline-flex justify-center items-center'><AiFillLinkedin /></span>

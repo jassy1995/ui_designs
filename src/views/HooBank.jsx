@@ -330,7 +330,7 @@ const Footer = () => (
                                             }`}
                                     >
                                         {
-                                        link.name === "Privacy Policy" ? <Link to={link.link} target="_blank" className='cursor-pointer hover:text-blue-500'>{link.name}</Link> : link.name
+                                        link.name === "Privacy Policy" ? <Link to={link.link} className='cursor-pointer hover:text-secondary'>{link.name}</Link> : link.name
                                         }
                                     </li>
                                

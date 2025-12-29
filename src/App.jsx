@@ -8,6 +8,10 @@ import HeroSection from "./views/HeroSection";
 import HooBank from "./views/HooBank";
 import Buyhub from "./views/Buyhub";
 import PrivacyPolicy from "./views/PrivacyPolicy";
+import TermsAndConditions from "./views/TermsAndConditions";
+import AboutUs from "./views/AboutUs";
+import ContactUs from "./views/ContactUs";
+import HowWeWork from "./views/HowWeWork";
 
 
 
@@ -25,6 +29,10 @@ function App() {
             <Route path="/hoo-bank" element={<HooBank />} />
             <Route path="/buyhub" element={<Buyhub />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/how-we-work" element={<HowWeWork />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </div>
